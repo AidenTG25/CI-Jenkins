@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/AidenTG25/CI-Jenkins.git'
+                git branch: 'main', url: 'https://github.com/AidenTG25/CI-Jenkins.git'
             }
         }
         stage('Install Dependencies') {
